@@ -28,6 +28,7 @@ $(document).ready(function () {
         active.removeClass("active");
         $("#" + $(this).data("item")).addClass("active");
         active = $(".active");
+        active.css("transform", "scale(1)");
 
         $(".container .nav").animate({ width: '0%' }, "fast", function () { $(".container .nav").toggle() });
         $(".container .overlay").fadeOut();
