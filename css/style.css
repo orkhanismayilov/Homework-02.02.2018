@@ -1,0 +1,174 @@
+*,
+ ::after,
+ ::before {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+}
+
+body {
+    font-family: 'Comfortaa';
+    background: black;
+}
+
+.container {
+    width: 100%;
+}
+
+.container .fullScreen{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+.container .fullScreen .main {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: relative;
+}
+
+.container .fullScreen .main.active{
+    display: block;
+    transition: 0.3s;
+}
+
+#intro{
+    background: #9e87ce;
+}
+
+#projects{
+    background: #5c4b51;
+}
+
+#about{
+    background: #e0cf75;
+}
+
+#services{
+    background: #f5b65a;
+}
+
+#careers{
+    background: #f25f5c;
+}
+
+#contact{
+    background: #8abeb2;
+}
+
+.container .menu {
+    font-size: 35px;
+    position: absolute;
+    right: 7%;
+    top: 7%;
+    cursor: pointer;
+}
+
+.container .heading {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.container .title {
+    font-size: 50px;
+    text-transform: capitalize;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.container .title_text {
+    font-size: 30px;
+    text-transform: capitalize;
+    display: block;
+}
+
+.container .overlay {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background: black;
+    display: none;
+    opacity: 0.6;
+}
+
+.container .nav {
+    width: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: white;
+    display: none;
+}
+
+.container .nav .nav_heading {
+    width: 100%;
+    padding: 40px 50px;
+}
+
+.container .nav .nav_title {
+    font-size: 18px;
+    text-transform: uppercase;
+    display: inline-block;
+    line-height: 30px;
+}
+
+.container .nav #close {
+    display: inline-flex;
+    float: right;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.container .nav .menu_list {
+    width: 100%;
+}
+
+.container .nav .menu_list ul {
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container .nav .menu_list ul li {
+    width: 33.33%;
+    float: left;
+    min-height: 250px;
+    background: #f2f2f2;
+    border: 1px solid white;
+    border-top: none;
+    border-left: none;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #9e87ce;
+}
+
+.container .nav .menu_list ul li.clicked{
+    color: white;
+}
+
+.container .nav .menu_list ul li .content .icon {
+    font-size: 55px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.container .nav .menu_list ul li .content .text {
+    font-size: 24px;
+    text-transform: capitalize;
+}
